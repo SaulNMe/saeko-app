@@ -9,10 +9,7 @@ const ApplicationStyles = {
 	screen: {
 		container: {
 			flex: 1,
-			padding: metrics.baseMargin,
-			backgroundColor: color.veryLight,
-			alignItems: 'center',
-			justifyContent: 'center',
+			backgroundColor: '#F8F8F8' 
 		},
 		titleText: {
 			...font.style.h1,
@@ -21,6 +18,14 @@ const ApplicationStyles = {
 		bodyText: {
 			...font.style.regular,
 			color: color.medium
+		},
+		post: {
+			backgroundColor: '#fff',
+			width: '100%',
+			marginBottom: 15,
+			paddingTop: 15,
+			paddingBottom: 15,
+			elevation: 3
 		}
 	},
 	stackNavigatorOptions: {
