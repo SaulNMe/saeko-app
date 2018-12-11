@@ -35,19 +35,15 @@ export default class DateFromNowComponent extends Component {
 
 	render () {
 		return (
-			<Text style={{color: this.props.color, fontSize: this.props.size, fontFamily: 'Roboto'}}>{this.state.dateFromNow}</Text>
+			<Text style={styles.dateLabel}>{this.state.dateFromNow}</Text>
 		);
 	}
 }
 
 DateFromNowComponent.propTypes = {
-	date: PropTypes.object.isRequired,
-	color: PropTypes.string,
-	size: PropTypes.number.isRequired
+	date: PropTypes.string.isRequired
 }
 
 DateFromNowComponent.defaultProps = {
-	date: moment().fromNow(),
-	color: 'gray',
-	size: 14
+	date: moment().fromNow()
 }

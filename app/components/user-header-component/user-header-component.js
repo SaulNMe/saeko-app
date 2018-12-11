@@ -17,12 +17,12 @@ export default class UserHeaderComponent extends Component {
 				<Image
 					resizeMode='stretch'
           			style={styles.avatar}
-          			source={{uri: this.props.data.avatar}}
+          			source={{uri: this.props.actor.avatar}}
         		/>
         		<View style={styles.container}>
-					<Text style={styles.header}>{this.props.data.user}</Text>
+					<Text style={styles.header}>{this.props.actor.first_name} {this.props.actor.surname}</Text>
 					<DateFromNow 
-						date={this.props.data.date}
+						date={this.props.time}
 						color= '#9CADC6'
 						size={14}
 					/>
@@ -33,7 +33,7 @@ export default class UserHeaderComponent extends Component {
 }
 
 UserHeaderComponent.propTypes = {
-	data: PropTypes.object.isRequired
+	actor: PropTypes.object.isRequired
 }
 
 UserHeaderComponent.defaultProps = {

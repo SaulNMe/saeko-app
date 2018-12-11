@@ -9,7 +9,7 @@ export default StyleSheet.create({
 	},
 	postTitle: {
 		/*color: '#0C273E',*/
-		color: color.saekoMain,
+		color: color.saekoDarkest,
 		fontSize: 18		
 	},
 	postContainer: {

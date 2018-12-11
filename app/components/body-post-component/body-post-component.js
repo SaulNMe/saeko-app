@@ -18,8 +18,8 @@ export default class NoticeComponent extends Component {
 	render () {
 		return (
 			<View style={styles.mainContainer}>
-				<Text style={styles.postTitle}>{this.props.data.postTitle}</Text>
-				<Text ellipsizeMode={'tail'} numberOfLines={1} style={styles.postContainer}>{this.props.data.postContainer}</Text>
+				<Text style={styles.postTitle}>{this.props.activity_object.headerMessage}</Text>
+				<Text ellipsizeMode={'tail'} numberOfLines={1} style={styles.postContainer}>{this.props.activity_object.message}</Text>
 			</View>
 		);
 	}

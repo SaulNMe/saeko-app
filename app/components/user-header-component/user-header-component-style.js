@@ -13,13 +13,14 @@ export default StyleSheet.create({
 		marginLeft: 20
 	},
 	header: {
-		color: '#0C273E',
+		color: color.saekoDarkest,
 		fontSize: 16, 
 		fontFamily: 'Roboto'	
 	},
 	avatar: {
 		marginLeft: 19,
 		width: 50,
-		height: 50
+		height: 50,
+		borderRadius:50
 	}
 });

@@ -9,6 +9,7 @@ import {
 
 import { Feather } from '@expo/vector-icons'
 
+import { font, color } from 'saeko-app/app/styles';
 import styles from './interactive-buttons-component-style';
 
 export default class InteractiveButtonsComponent extends Component {
@@ -20,7 +21,7 @@ export default class InteractiveButtonsComponent extends Component {
 
 	render () {
 		return (
-			<View style={styles.container}>
+			<View style={styles.mainContainer}>
 				<TouchableOpacity 
 					onPress={() => alert("Hey!")}
 					style={styles.button}
@@ -28,7 +29,7 @@ export default class InteractiveButtonsComponent extends Component {
 					<Feather
 						name="thumbs-up"
 						size={32}
-						color='#9CADC6'/>
+						color={color.light}/>
 				</TouchableOpacity>
 				<TouchableOpacity 
 					onPress={() => alert("Hey!")}
@@ -37,7 +38,7 @@ export default class InteractiveButtonsComponent extends Component {
 					<Feather
 						name="message-square"
 						size={32}
-						color='#9CADC6'/>
+						color={color.light}/>
 				</TouchableOpacity>
 				<TouchableOpacity 
 					onPress={() => alert("Hey!")}
@@ -46,7 +47,7 @@ export default class InteractiveButtonsComponent extends Component {
 					<Feather
 						name="share"
 						size={32}
-						color='#9CADC6'/>
+						color={color.light}/>
 				</TouchableOpacity>
 			</View>
 		);
