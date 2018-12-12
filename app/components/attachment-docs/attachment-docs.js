@@ -1,27 +1,37 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import {
 	Text,
 	View,
-	Image
+	Image,
+	TouchableOpacity
 } from 'react-native';
 
 import styles from './attachment-docs-style';
 
 export default class AttachmentDocs extends Component {
 	render () {
+		var exten;
+		this.props.data.forEach((ext) => {
+			if (ext.extension == 'docs' || ext.extension == 'doc') {
+				exten = require('saeko-app/assets/Image/docs.png')
+			}else if (ext.extension == 'pdf') {
+				exten = require('saeko-app/assets/Image/pdf.png')
+			}else if (ext.extension == 'xls') {
+				exten = require('saeko-app/assets/Image/xls.png')
+			}
+		})
 		return (
 			<View style={styles.mainContainer}>
 				{
 					this.props.data.map((file) =>(
-						<View style={styles.container}>
+						<TouchableOpacity style={styles.container}>
 							<Image
 								style={styles.imageContainer}
-								source={require(`saeko-app/assets/Image/file-icon-ppt.png`)}
+								source={exten}
 							/>
 							<Text style={styles.fileName}> {file.filename}</Text>
-						</View>
+						</TouchableOpacity>
 					))
 				}
 			</View>
