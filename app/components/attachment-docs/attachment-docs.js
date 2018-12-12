@@ -18,7 +18,7 @@ export default class AttachmentDocs extends Component {
 						<View style={styles.container}>
 							<Image
 								style={styles.imageContainer}
-								source={require('saeko-app/assets/Image/file-icon-pdf.png')}
+								source={require(`saeko-app/assets/Image/file-icon-ppt.png`)}
 							/>
 							<Text style={styles.fileName}> {file.filename}</Text>
 						</View>
@@ -34,5 +34,6 @@ AttachmentDocs.propTypes = {
 }
 
 AttachmentDocs.defaultProps = {
+	
 	// data: []
 }
