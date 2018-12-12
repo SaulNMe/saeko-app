@@ -70,7 +70,7 @@ export default class HomeScreen extends Component {
 		         	},
 		         	"activity_object":{  
 		            	"id":708,
-		            	"headerMessage": "Lorem ipsum dolor",
+		            	"headerMessage": "Lorem ipsum dolors",
 		            	"message":"Hola\nEste es un mensaje\ncon enters\nen medio, adivina donde\nhay esos enteres. \nEs súper fácil",
 		            	"attachments":[
 		            		{  
