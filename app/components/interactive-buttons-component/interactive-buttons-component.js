@@ -28,7 +28,7 @@ export default class InteractiveButtonsComponent extends Component {
 				> 
 					<Feather
 						name="thumbs-up"
-						size={32}
+						size={25}
 						color={color.light}/>
 				</TouchableOpacity>
 				<TouchableOpacity 
@@ -37,7 +37,7 @@ export default class InteractiveButtonsComponent extends Component {
 				> 
 					<Feather
 						name="message-square"
-						size={32}
+						size={25}
 						color={color.light}/>
 				</TouchableOpacity>
 				<TouchableOpacity 
@@ -46,7 +46,7 @@ export default class InteractiveButtonsComponent extends Component {
 				> 
 					<Feather
 						name="share"
-						size={32}
+						size={25}
 						color={color.light}/>
 				</TouchableOpacity>
 			</View>

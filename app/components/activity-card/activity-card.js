@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 import {
 	Text,
-	View
+	View,
+	StyleSheet
 } from 'react-native';
 
 import styles from './activity-card-style';
@@ -24,14 +25,14 @@ export default class ActivityCard extends Component {
 		let arrImgs = [];
 		item.activity_object.attachments.forEach((item) => {
 			var extension = item.filename.split(".")
-			if(extension[extension.length-1] === "pdf" || extension[extension.length-1] === "xlsx" || extension[extension.length-1] === "docx"){
+			if(extension[extension.length-1] === "pdf" || extension[extension.length-1] === "xlsx" || extension[extension.length-1] === "doc"){
 				arrDocs.push({url: item.url, filename: item.filename, extension: extension[extension.length-1]});
 			} else if (extension[extension.length-1] === "jpg" || extension[extension.length-1] === "png" || extension[extension.length-1] === "jpeg"){
 				arrImgs.push(item);
 			}
 		})
 		return (
-			<View>
+			<View style={styles.post}>
 				<UserHeader
 					actor={this.state.item.actor}
 					time={this.state.item.time}
